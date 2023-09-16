@@ -31,6 +31,7 @@ console.log(new_data);
 
 console.log(chalk.blue('hello') + 'World' + chalk.red('!'));
 console.log('this is a develop branch!');
+console.log('this is a develop branch! and console.log is second');
 
 
 //External package;
