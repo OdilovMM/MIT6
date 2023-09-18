@@ -1,25 +1,30 @@
-/*
-📌  B-Task: Shunday function tuzing, u 1ta parametr ega bolsin, hamda osha stringda qatnashgan raqamlarni 
-sonini return qilsin. Masalan: getDigits("ag1aw5g6") return qilsin 3 ni
+/* 
+TASK-C;
+
+Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil 
+harflardan iborat bolsa true aks holda false qaytarsin.
+
+MASALAN checkSimilarity("laepp", "apple") true return qiladi.;
 */
-function getDigits(text) {
-    let countChar = 0;
 
-    //converting word into array;
-    
-    let convertedList = text.split('');
-    
-    //mapping through array;
-    
-    convertedList.map((element) => {
-        const parseElement = Number(element);
-        if(Number.isInteger(parseElement)) {
-            countChar++;
-        } else {
-            countChar;
-        };
-    });
-    return countChar;    
-};
-
-console.log(getDigits('dsd33sd'));
+function getSimilarity(primary, secondary) {
+    // const sortString = str.split("").sort().join("");
+    // string1.localeCompare(string2)
+  
+    let one = primary.toLowerCase().split("").sort().join("");
+  
+    // console.log(one);
+    // console.log(primary)
+  
+    let two = secondary.toLowerCase().split("").sort().join("");
+  
+    if (one.length !== two.length) {
+      return false;
+    } else {
+      return one === two;
+    }
+  }
+  
+  const javob = getSimilarity("apple", "leapp");
+  console.log(javob);
+  
