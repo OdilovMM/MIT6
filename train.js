@@ -50,9 +50,23 @@ const shop = new Shop(5, 5, 5);
 console.log(shop.qoldiq()); // Birinchi qoldiqni ko'rish
 
 console.log(shop.sotish("non", 3));
+
+console.log('========================');
 console.log(shop.sotish("lagmon", 2));
+
+console.log('========================');
 console.log(shop.sotish("cola", 1));
+
+console.log('========================');
 console.log(shop.qabulQilish("non", 8));
+
+console.log('========================');
 console.log(shop.qabulQilish("lagmon", 8));
+
+console.log('========================');
 console.log(shop.qabulQilish("cola", 8));
+
+console.log('========================');
 console.log(shop.qoldiq());
+
+
